@@ -1,0 +1,7 @@
+bot:
+    build: ./bot
+    volumes:
+        - ../:/usr/src/app
+    restart: always
+    command: python3 bot.py
+    container_name: bot
